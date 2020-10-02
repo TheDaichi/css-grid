@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+.albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.album {
+  padding: 12px;
+  background-color: transparent;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: grid;
+  font-weight: bold;
+  grid-template-columns: 150px 1fr;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.album__artwork {
+  width: 100%;
+}

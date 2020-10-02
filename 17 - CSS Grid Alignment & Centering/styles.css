@@ -1,0 +1,28 @@
+/*
+  justify-items: actual items container
+  align-items:actual items container
+
+  justify-content: actual grid container
+  align-content: actual grid container
+
+  align-self: 
+  justify-self: 
+
+  justify-* is row axis
+  align-* is column axis
+*/
+
+.container {
+  border: 4px solid var(--yellow);
+  display: grid;
+  height: 600px;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, 500px);
+  justify-items: stretch; /* start, center, end, stretch */
+  align-items: end; /* start, center, end, stretch */
+  justify-content: space-evenly;
+}
+
+.itm {
+  background: teal;
+}

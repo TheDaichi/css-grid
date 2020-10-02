@@ -1,0 +1,15 @@
+.container {
+  display: grid;
+  padding: 10px;
+  border: 4px solid var(--yellow);
+  /*
+  * auto-fill: makes grid to extend to end
+  * auto-fit: doesn't extend grid but it has columns like autofill but ovelaps
+  */
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  /* grid-template-columns: repeat(auto-fill, 100px); */
+
+  grid-template-columns: fit-content(400px) 150px 150px 150px;
+
+  grid-gap: 10px;
+}

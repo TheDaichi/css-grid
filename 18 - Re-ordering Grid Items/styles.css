@@ -1,0 +1,20 @@
+.container {
+  border: 2px solid var(--yellow);
+  padding: 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, 500px);
+}
+
+.item1 {
+  background: teal;
+  order: 3;
+}
+
+.item2 {
+  order: 2;
+}
+
+.item3 {
+  order: 1;
+}
